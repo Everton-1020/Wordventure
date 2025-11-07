@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caça-Palavras</title>
+  <link rel="stylesheet" href="fase5.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Caça-Palavras</h1>
+    <button id="ouvir" class="voice-button">🔊 Ouvir Instrução</button>
+
+    <div class="word-list">
+      <h2>Palavras para encontrar:</h2>
+      <ul id="words-to-find"></ul>
+    </div>
+
+    <div id="grid" class="grid"></div>
+
+    <div id="message" class="message"></div>
+    <div id="found-info" class="found-info"></div>
+
+    <button id="finish-button" class="finish-button" style="display: none;">
+      Finalizar Jogo
+    </button>
+
+    <!-- Botão de voltar -->
+    <button id="voltar" class="back-button">Voltar à fase anterior</button>
+  </div>
+
+  <!-- Sons -->
+  <audio id="som-acerto" src="sons/acerto.mp3"></audio>
+  <audio id="som-erro" src="sons/erro.mp3"></audio>
+  <audio id="som-vitoria" src="sons/vitoria.mp3"></audio>
+
+  <script src="fase5.js"></script>
+</body>
+</html>

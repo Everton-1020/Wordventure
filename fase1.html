@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cara Metade</title>
+  <link rel="stylesheet" href="fase1.css">
+</head>
+<body>
+
+  <h1> Cara Metade</h1>
+
+  <h2 id="enunciado">
+  Escolha duas partes que formem uma palavra da figura:
+  <button id="btnFalar" class="btn-falar" onclick="lerEnunciado()" title="Ouvir enunciado">🔊</button>
+</h2>
+
+
+  <div class="grid">
+    <!-- Primeiras partes -->
+   <div class="card" onclick="selectCard(this)" data-part="PA" data-word="PATO">
+  PA <img src="imgfase1/imagespato1.jpg">
+</div>
+   <div class="card" onclick="selectCard(this)" data-part="GA" data-word="GATO">
+  GA <img src="imgfase1/imagesgato1.jpg">
+</div>
+    <div class="card" onclick="selectCard(this)" data-part="SA">SA <img src="imgfase1/imagessapo1.jpg"></div>
+    <div class="card" onclick="selectCard(this)" data-part="VA">VA <img src="imgfase1/imagesvaca1.jpg"></div>
+  </div>
+
+  <div class="grid">
+    <!-- Segundas partes -->
+    <div class="card" onclick="selectCard(this)" data-part="TO" data-word="GATO">
+  TO <img src="imgfase1/imagesgato2.jpg">
+</div>
+    <div class="card" onclick="selectCard(this)" data-part="CA">CA <img src="imgfase1/imagesvaca2.jpg"></div>
+    <div class="card" onclick="selectCard(this)" data-part="PO">PO <img src="imgfase1/imagessapo2.jpg"></div>
+    <div class="card" onclick="selectCard(this)" data-part="TO" data-word="PATO">
+  TO <img src="imgfase1/imagespato2.jpg">
+  </div>
+  </div>
+
+  <p id="result" class="result-message"></p>
+
+  <!--Botão para próxima fase>-->
+  <a id="next-phase-btn" href="fase2.html" style="display: none;" class="next-phase-button">
+    Próxima Fase
+  </a>
+
+  <script src="fase1.js"></script>
+</body>
+</html>

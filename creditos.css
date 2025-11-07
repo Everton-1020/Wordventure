@@ -1,0 +1,121 @@
+/* ===== ESTILO GERAL ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(180deg, #000000, #1a1a1a);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background-color: #121212;
+  border: 2px solid #ff7a00;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 122, 0, 0.6);
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 700px;
+  animation: fadeIn 1.2s ease;
+}
+
+/* ===== TÍTULOS ===== */
+h1 {
+  color: #ff7a00;
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px rgba(255, 122, 0, 0.7);
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff7a00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ===== LISTA DA EQUIPE ===== */
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.team-list li {
+  background-color: rgba(255, 122, 0, 0.1);
+  border-left: 4px solid #ff7a00;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 1.1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.team-list li:hover {
+  background-color: rgba(255, 122, 0, 0.25);
+  transform: scale(1.03);
+}
+
+.team-list strong {
+  color: #ff7a00;
+}
+
+/* ===== LOGO ===== */
+.logo-container {
+  margin-top: 25px;
+}
+
+.logo-container img {
+  width: 200px;
+  border-radius: 15px;
+  border: 2px solid #ff7a00;
+  box-shadow: 0 0 20px rgba(255, 122, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 122, 0, 0.9);
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .team-list li {
+    font-size: 1em;
+  }
+
+  .logo-container img {
+    width: 150px;
+  }
+}
+
+

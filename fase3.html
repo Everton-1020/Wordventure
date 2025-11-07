@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Problemas Matemáticos</title>
+  <link rel="stylesheet" href="fase3.css" />
+</head>
+<body>
+  <div id="quiz-container">
+    <p id="question-text"></p>
+    <button id="ler-btn">🔊 Ouvir Pergunta</button>
+    <img id="question-image" src="" alt="Imagem do problema" />
+    <div id="answer-options"></div>
+    <p id="explanation-text" style="display: none; font-style: italic; margin-top: 20px;"></p>
+    <button id="next-btn" style="display: none;">Próxima</button>
+
+    <!-- Botão de voltar movido para o final -->
+    <button id="voltar-btn">Voltar à fase anterior</button>
+  </div>
+
+  <div id="result-container" style="display: none;">
+    <h2>Fim do Jogo!</h2>
+    <p>Você acertou <span id="score"></span> de <span id="total"></span> perguntas!</p>
+    <button id="next-phase-btn" onclick="window.location.href='fase4.html'">Próxima Fase</button>
+    <button id="bonus-btn" style="display: none;" onclick="window.location.href='fasebonus.html'">Fase Bônus</button>
+  </div>
+
+  <script src="fase3.js"></script>
+</body>
+</html>

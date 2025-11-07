@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Letrinha por Letrinha - Fase 4</title>
+  <link rel="stylesheet" href="fase4.css">
+</head>
+<body>
+  <h1>Letrinha por Letrinha</h1>
+  <button id="ouvir" class="voice-button">🔊 Ouvir Instrução</button>
+  
+  <div id="game">
+    <img src="img/maca.png" alt="Imagem da palavra" id="palavra-img">
+    
+    <div id="espacos"></div>
+    <div id="letras"></div>
+    
+    <button id="confirmar">Confirmar</button>
+    <button id="proxima" disabled>Próxima Palavra</button>
+    <button id="refazer" style="display: none;">Refazer</button>
+
+    <div id="mensagem-final" style="margin-top: 20px; font-size: 20px; font-weight: bold;"></div>
+  </div>
+
+  <!-- Botão para voltar à fase anterior -->
+  <div style="text-align: center; margin-top: 40px;">
+    <button id="voltar">Voltar à fase anterior</button>
+  </div>
+
+  <!-- Sons -->
+  <audio id="som-acerto" src="sons/acerto.mp3"></audio>
+  <audio id="som-erro" src="sons/erro.mp3"></audio>
+  <audio id="som-vitoria" src="sons/vitoria.mp3"></audio>
+
+  <script src="fase4.js"></script>
+</body>
+</html>
